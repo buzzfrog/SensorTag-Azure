@@ -11,5 +11,12 @@ A *Universal Windows App* connects to the *SensorTag* with *Bluetooth*. This app
 
 ## Getting started
 
-### Pair the TI SensorTag in the *Manage Bluetooth devices* settings
+### 1. Pair the TI SensorTag in the *Manage Bluetooth devices* settings
+
+### 2. Download the source code or the compiled executable.
+
+### 3. Create EventHub and Stream Analytics services in Azure
+
+### 4. Create a PowerBI report
+
 
