@@ -16,7 +16,7 @@ A *Universal Windows App* connects to the *SensorTag* with *Bluetooth*. This app
 ### 2. Download the source code or the compiled executable.
 
 ### 3. Create EventHub and Stream Analytics services in Azure
-
+![Alt text](/path/to/img.jpg)
 ### 4. Create a PowerBI report
 
 
