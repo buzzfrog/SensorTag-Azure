@@ -49,7 +49,16 @@ to also save it by clicking SAVE in teh bottom of the screen.
 When it is saved a new section will appear, *shared access key generator*. The *Policy Name* and the *Primary Key* will we
 use later in the application that sends the information to Azure. (This is the credentials to be able to send to this event hub.)
 
-![New Shared Access Policy](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-shared-access-key-generator.png)
+![Shared Access Key Generator](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-shared-access-key-generator.png)
+
+#### Ready to test sendning the information to Azure
+We are now ready to start sending information from the SensorTag into Azure.
+
+1\. Start SensorTagReader on you computer and enter the information to connect to the Event Hub.
+
+![SensorTagReader](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/sensortagreader-settings.png)
+
+2\. Click on Start and make sure that the SensorTag is connected.
 
 ### 4. Create a PowerBI report
 
