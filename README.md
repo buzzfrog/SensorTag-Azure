@@ -60,6 +60,11 @@ We are now ready to start sending information from the SensorTag into Azure.
 
 2\. Click on Start and make sure that the SensorTag is connected.
 
+If everything is ok you will see events data appering in the dashboard. (This could take up to ten minutes before you
+see any data in the dashboard.)
+
+![Event Hub Diagnostics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-diagnostics.png)
+
 ### 4. Create a PowerBI report
 
 
