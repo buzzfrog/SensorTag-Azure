@@ -16,7 +16,7 @@ A *Universal Windows App* connects to the *SensorTag* with *Bluetooth*. This app
 
 ### 2. Download the source code or the compiled executable.
 
-### 3. Create EventHub and Stream Analytics services in Azure
+### 3. Create EventHub in Azure
 1\. Open [http://manage.windowsazure.com](http://manage.windowsazure.com)
 
 2\. Navigate to the *Service Bus pane*.
@@ -65,6 +65,20 @@ see any data in the dashboard.)
 
 ![Event Hub Diagnostics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-diagnostics.png)
 
-### 4. Create a PowerBI report
+### 4. Create Stream Analytics Jobs in Azure
+1\. Navigate to *Stream Analytics pane*.
+
+![New Stream Analytics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-new.png)
+
+2\. Create a new Stream Analytics Job
+
+![Create New Stream Analytics Job](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-create-new.png)
+
+3\. Click on the newly created job to open the details page for that job.
+
+![Stream Analytics Job Detail](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job.png)
+
+
+### 5. Create a PowerBI report
 
 
