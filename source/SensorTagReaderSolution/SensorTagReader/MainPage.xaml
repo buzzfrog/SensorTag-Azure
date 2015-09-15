@@ -50,7 +50,7 @@
             <TextBlock>Shared Access Policy Name</TextBlock>
             <TextBox x:Name="SharedAccessPolicyNameField" LostFocus="OnSettingsChanged"></TextBox>
             <TextBlock>Shared Access Policy Key</TextBlock>
-            <TextBox x:Name="SharedAccessPolicyKeyField" LostFocus="OnSettingsChanged" Text="Nbn6DFEJhkR0eSgaEiCeSV4e1Nsxu8LndIazfsOTq0M="></TextBox>
+            <TextBox x:Name="SharedAccessPolicyKeyField" LostFocus="OnSettingsChanged"></TextBox>
             <TextBlock>Sensor Name</TextBlock>
             <TextBox x:Name="SensorNameField" LostFocus="OnSettingsChanged"></TextBox>
             <TextBlock x:Name="EventHubInformation"></TextBlock>
