@@ -25,6 +25,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="TextAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="HorizontalAlignment" />

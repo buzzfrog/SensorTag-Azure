@@ -1,4 +1,3 @@
-WinMetadata\Windows.winmd
 Assets\Images\Rain light sensor.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
@@ -9,3 +8,4 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 SensorTagReader.xr.xml
 Properties\Default.rd.xml
+WinMetadata\Windows.winmd

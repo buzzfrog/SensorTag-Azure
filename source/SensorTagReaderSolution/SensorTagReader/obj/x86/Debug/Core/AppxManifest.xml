@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="8266107d-6a6f-422d-9e76-3e1c6f9ead60" Publisher="CN=tferrand" Version="1.1.100.0" ProcessorArchitecture="x86" />
+  <Identity Name="SensorTagReader" Publisher="CN=tferrand" Version="1.1.103.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="8266107d-6a6f-422d-9e76-3e1c6f9ead60" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SensorTagReader</DisplayName>
