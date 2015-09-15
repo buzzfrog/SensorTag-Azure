@@ -70,13 +70,26 @@ see any data in the dashboard.)
 
 ![New Stream Analytics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-new.png)
 
-2\. Create a new Stream Analytics Job
+2\. Create a new Stream Analytics Job.
 
 ![Create New Stream Analytics Job](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-create-new.png)
 
+![Stream Analytics Job](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job.png)
+
 3\. Click on the newly created job to open the details page for that job.
 
-![Stream Analytics Job Detail](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job.png)
+![Stream Analytics Job Detail](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-detail.png)
+
+4\. Click on *INPUTS* in the tab menu to see a list of inputs for this job.
+
+![Stream Analytics Input](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input.png)
+
+5\. Create a new input
+
+![Stream Analytics Input Create 1](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-1.png)
+![Stream Analytics Input Create 2](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-2.png)
+![Stream Analytics Input Create 3](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-3.png)
+![Stream Analytics Input Create 4](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-4.png)
 
 
 ### 5. Create a PowerBI report
