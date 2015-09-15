@@ -1,0 +1,2 @@
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\SensorTagReaderSolution\SensorTagLibrary\SensorTagLibrary.csproj;arm
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\SensorTagReaderSolution\SensorTagReader\SensorTagReader.csproj;arm

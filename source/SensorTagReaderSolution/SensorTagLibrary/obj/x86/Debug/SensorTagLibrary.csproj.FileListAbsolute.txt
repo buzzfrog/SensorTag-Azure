@@ -1,0 +1,17 @@
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\bin\x86\Debug\X2CodingLab.SensorTag.dll
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\bin\x86\Debug\X2CodingLab.SensorTag.pdb
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\bin\x86\Debug\X2CodingLab.SensorTag.pri
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\SensorTagLibrary.csprojResolveAssemblyReference.cache
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\X2CodingLab.SensorTag.dll
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\X2CodingLab.SensorTag.pdb
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\priconfig.xml
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\layout.resfiles
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\resources.resfiles
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\pri.resfiles
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\qualifiers.txt
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\dagk\OneDrive\Demonstrations\Azure\SensorTag\sensortag-32673\SensorTagLibrary\SensorTagLibrary\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
