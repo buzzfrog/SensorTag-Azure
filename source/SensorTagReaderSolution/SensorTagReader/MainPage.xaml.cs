@@ -50,25 +50,31 @@ namespace SensorTagReader
 
         private async void OnEventHubWriterTimerTick(object sender, object e)
         {
-            if (tagreader == null || tagreader.CurrentValues == null)
-                return;
-
-            txtTemperature.Text = $"{tagreader.CurrentValues.Temperature:N2} C";
-            txtHumidity.Text = $"{tagreader.CurrentValues.Humidity:N2} %";
-
-            try
+            if ((string)StartCommand.Tag == "STARTED")
             {
-                await eventHubService.SendMessage(new Messages.EventHubSensorMessage()
-                {
-                    SensorName = SensorNameField.Text,
-                    TimeWhenRecorded = DateTime.Now,
-                    Temperature = tagreader.CurrentValues.Temperature,
-                    Humidity = tagreader.CurrentValues.Humidity
-                });
-                numberOfCallsDoneToEventHub++;
-            }
-            catch { numberOfFailedCallsToEventHub++; }
+                if (tagreader == null || tagreader.CurrentValues == null)
+                    return;
 
+                txtTemperature.Text = $"{tagreader.CurrentValues.Temperature:N2} C";
+                txtHumidity.Text = $"{tagreader.CurrentValues.Humidity:N2} %";
+
+                try
+                {
+                    await eventHubService.SendMessage(new Messages.EventHubSensorMessage()
+                    {
+                        SensorName = SensorNameField.Text,
+                        TimeWhenRecorded = DateTime.Now,
+                        Temperature = tagreader.CurrentValues.Temperature,
+                        Humidity = tagreader.CurrentValues.Humidity
+                    });
+                    numberOfCallsDoneToEventHub++;
+                }
+                catch { numberOfFailedCallsToEventHub++; }
+            }
+            else
+            {
+
+            }
             EventHubInformation.Text = $"Calls: {numberOfCallsDoneToEventHub}, Failed Calls: {numberOfFailedCallsToEventHub}";
 
         }
@@ -80,7 +86,7 @@ namespace SensorTagReader
 
         private async void StartCommand_Click(object sender, RoutedEventArgs e)
         {
-            if((String)StartCommand.Tag == "STOPPED")
+            if((string)StartCommand.Tag == "STOPPED")
             {
                 try
                 {
@@ -120,6 +126,22 @@ namespace SensorTagReader
             EventHubInformation.Text = $"Calls: {numberOfCallsDoneToEventHub}, Failed Calls: {numberOfFailedCallsToEventHub}";
         }
 
+        private async Task startSimulation()
+        {
+            eventHubService = new EventHubService(ServiceBusNamespaceField.Text,
+                EventHubNameField.Text, SharedAccessPolicyNameField.Text, SharedAccessPolicyKeyField.Text);
+
+            txtError.Text = "";
+            eventHubWriterTimer.Start();
+            numberOfFailedCallsToEventHub = numberOfCallsDoneToEventHub = 0;
+            EventHubInformation.Text = $"Calls: {numberOfCallsDoneToEventHub}, Failed Calls: {numberOfFailedCallsToEventHub}";
+        }
+
+        private void stopSimulation()
+        {
+            eventHubWriterTimer.Stop();
+        }
+
         private void OnSettingsChanged(object sender, RoutedEventArgs e)
         {
             TextBox textBox = sender as TextBox;
@@ -128,6 +150,11 @@ namespace SensorTagReader
                 localSettings.Values[textBox.Name] = textBox.Text;
                 stopTracking();
             }
+        }
+
+        private void SimulateCommand_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

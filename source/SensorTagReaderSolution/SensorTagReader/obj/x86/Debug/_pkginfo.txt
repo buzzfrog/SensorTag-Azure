@@ -1,1 +1,0 @@
-C:\git\SensorTag-Azure\package\SensorTagReader_1.1.103.0_x86_Debug_Test\SensorTagReader_1.1.103.0_x86_Debug.appx

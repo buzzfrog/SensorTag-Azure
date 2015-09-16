@@ -1,2 +1,0 @@
-C:\git\SensorTag-Azure\source\SensorTagReaderSolution\SensorTagLibrary\SensorTagLibrary.csproj;arm
-C:\git\SensorTag-Azure\source\SensorTagReaderSolution\SensorTagReader\SensorTagReader.csproj;arm

@@ -55,6 +55,9 @@
             <TextBox x:Name="SensorNameField" LostFocus="OnSettingsChanged"></TextBox>
             <TextBlock x:Name="EventHubInformation"></TextBlock>
         </StackPanel>
-        <Button Grid.Row="6" Height="50" x:Name="StartCommand" Tag="STOPPED" Content="Start" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="10" Click="StartCommand_Click"/>
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button  Height="50" x:Name="StartCommand" Tag="STOPPED" Content="Start" Width="100" VerticalAlignment="Center" Margin="10" Click="StartCommand_Click"/>
+            <Button  Height="50" x:Name="SimulateCommand" Tag="STOPPED" Content="Simulate" Width="100" VerticalAlignment="Center" Margin="10" Click="SimulateCommand_Click" />
+        </StackPanel>
     </Grid>
 </Page>
