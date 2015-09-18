@@ -88,8 +88,11 @@ see any data in the dashboard.)
 5\. Create a new input
 
 ![Stream Analytics Input Create 1](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-1.png)
+
 ![Stream Analytics Input Create 2](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-2.png)
+
 ![Stream Analytics Input Create 3](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-3.png)
+
 ![Stream Analytics Input Create 4](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-4.png)
 
 6\. Create a new output by going to the *OUTPUT* tab
@@ -104,11 +107,41 @@ that new user when you authorize the connection that we will do in the instructi
 ![Stream Analytics Output Create](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-1.png)
 
 8\. Authorize the connection to PowerBI
+
 It is here you need your organizational account.
 
-![Stream Analytics Output Create](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-authorize.png)
+![Stream Analytics Output Authorize](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-authorize.png)
 
+9\. PowerBI settings
 
+![Stream Analytics Output Create 3](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-3.png)
+
+10\. Output created
+
+![Stream Analytics Output Create 3](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-created.png)
+
+11\. Time to create the query that analyze the stream. Open the tab *QUERY*.
+
+![Stream Analytics Query](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-query.png)
+
+```
+SELECT 
+        max(humidity) as humidity,
+        max(temperature) as temperature,
+        time,
+        -20 as minTemperature,
+        60 as maxTemperature,
+        23 as targetTemperature,
+        100 as maxHumidity,
+        70 as targetHumidity
+FROM Input 
+WHERE sensorName = 'sensor001'
+Group by TUMBLINGWINDOW(ss,1), time, sensorName
+```
+
+Remember to save your query.
+
+12\. Click on *START* in the dark menu in the bottom of the screen to start the job.
 
 
 
