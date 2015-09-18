@@ -1,22 +1,23 @@
-# SensorTag Azure
+# SensorTag Azure #
 This project is designed to demonstrate how from a device via Microsoft Azure can display information in PowerBI. (This project got much inspiration from the following project [SensorTagToEventHub]( https://github.com/Azure/azure-stream-analytics/tree/master/Samples/SensorDataAnalytics/SensorTagToEventHub).)
 
-## Overview
+## Overview ##
 A *Universal Windows App* connects to the *SensorTag* with *Bluetooth*. This app reads the sensor each second and sends the data to *Azure EventHub*. An *Azure Stream Analytics* job analyse the data and send it to *PowerBI*.
 
-## What you need
+## What you need ##
 * Windows 10 computer
 * TI SensorTag
-* Windows Azure Account using Org Id (Power BI works with Org ID only. Org ID is your work or business email address e.g. xyz@mycompany.com. Personal emails like xyz@hotmail.com are not org ids. [You can learn more about org id here](https://www.arin.net/resources/request/org.html) )
+* Windows Azure Account using *Organization account* (Power BI works with Organization account only. Organization account is often your work or business email address e.g. xyz@mycompany.com. 
+Personal emails like xyz@hotmail.com are not organizations accounts).
 
-## Getting started
+## Getting started ##
 
-### 1. Pair the TI SensorTag in the *Manage Bluetooth devices* settings
+### 1. Pair the TI SensorTag in the *Manage Bluetooth devices* settings ###
 > To make sure that the demonstration work, it is a good practice to remove other SensorTags that are already paired in the system.
 
-### 2. Download the source code or the compiled executable.
+### 2. Download the source code or the compiled executable. ####
 
-### 3. Create EventHub in Azure
+### 3. Create EventHub in Azure ####
 1\. Open [http://manage.windowsazure.com](http://manage.windowsazure.com)
 
 2\. Navigate to the *Service Bus pane*.
@@ -51,7 +52,7 @@ use later in the application that sends the information to Azure. (This is the c
 
 ![Shared Access Key Generator](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-shared-access-key-generator.png)
 
-#### Ready to test sendning the information to Azure
+#### Ready to test sendning the information to Azure ###
 We are now ready to start sending information from the SensorTag into Azure.
 
 1\. Start SensorTagReader on you computer and enter the information to connect to the Event Hub.
@@ -65,7 +66,7 @@ see any data in the dashboard.)
 
 ![Event Hub Diagnostics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-diagnostics.png)
 
-### 4. Create Stream Analytics Jobs in Azure
+### 4. Create Stream Analytics Jobs in Azure ###
 1\. Navigate to *Stream Analytics pane*.
 
 ![New Stream Analytics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-new.png)
@@ -91,7 +92,27 @@ see any data in the dashboard.)
 ![Stream Analytics Input Create 3](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-3.png)
 ![Stream Analytics Input Create 4](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-4.png)
 
+6\. Create a new output by going to the *OUTPUT* tab
 
-### 5. Create a PowerBI report
+#### VERY IMPORTANT INFORMATION ####
+You need to connect to PowerBI with an organization account, as I said above. You can't use a Microsoft Live account for this. So, if you
+logged in with a Micrsoft Live account you need to create an Azure Active Directory tenant and create one user in that tenant. Use
+that new user when you authorize the connection that we will do in the instructions below.
+
+7\. Create a new output
+
+![Stream Analytics Output Create](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-1.png)
+
+8\. Authorize the connection to PowerBI
+It is here you need your organizational account.
+
+![Stream Analytics Output Create](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-authorize.png)
+
+
+
+
+
+
+### 5. Create a PowerBI report ###
 
 

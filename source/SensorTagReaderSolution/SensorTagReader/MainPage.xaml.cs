@@ -75,6 +75,7 @@ namespace SensorTagReader
             {
 
             }
+
             EventHubInformation.Text = $"Calls: {numberOfCallsDoneToEventHub}, Failed Calls: {numberOfFailedCallsToEventHub}";
 
         }
