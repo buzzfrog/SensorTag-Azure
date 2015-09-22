@@ -14,6 +14,8 @@ namespace SensorTagReader
         EventHubService eventHubService;
         int numberOfCallsDoneToEventHub;
         int numberOfFailedCallsToEventHub;
+        double currentSimulatedTemperature = 21.0F;
+        Random simulatorRandomizer = new Random();
 
         Windows.Storage.ApplicationDataContainer localSettings;
 
@@ -73,6 +75,22 @@ namespace SensorTagReader
             }
             else
             {
+                setNextSimulatedValue();
+
+                txtTemperature.Text = $"{currentSimulatedTemperature:N2} C";
+
+                try
+                {
+                    await eventHubService.SendMessage(new Messages.EventHubSensorMessage()
+                    {
+                        SensorName = SensorNameField.Text,
+                        TimeWhenRecorded = DateTime.Now,
+                        Temperature = currentSimulatedTemperature,
+                        Humidity = 50
+                    });
+                    numberOfCallsDoneToEventHub++;
+                }
+                catch { numberOfFailedCallsToEventHub++; }
 
             }
 
@@ -132,6 +150,8 @@ namespace SensorTagReader
             eventHubService = new EventHubService(ServiceBusNamespaceField.Text,
                 EventHubNameField.Text, SharedAccessPolicyNameField.Text, SharedAccessPolicyKeyField.Text);
 
+            SimulateCommand.Content = "Stop";
+            SimulateCommand.Tag = "STARTED";
             txtError.Text = "";
             eventHubWriterTimer.Start();
             numberOfFailedCallsToEventHub = numberOfCallsDoneToEventHub = 0;
@@ -140,6 +160,8 @@ namespace SensorTagReader
 
         private void stopSimulation()
         {
+            SimulateCommand.Content = "Start";
+            SimulateCommand.Tag = "STOPPED";
             eventHubWriterTimer.Stop();
         }
 
@@ -153,9 +175,28 @@ namespace SensorTagReader
             }
         }
 
-        private void SimulateCommand_Click(object sender, RoutedEventArgs e)
+        private async void SimulateCommand_Click(object sender, RoutedEventArgs e)
         {
+            if ((string)SimulateCommand.Tag == "STOPPED")
+            {
+                try
+                {
+                    await startSimulation();
+                }
+                catch (Exception ex)
+                {
+                    txtError.Text = ex.Message;
+                }
+            }
+            else
+            {
+                stopSimulation();
+            }
+        }
 
+        private void setNextSimulatedValue()
+        {
+            currentSimulatedTemperature += simulatorRandomizer.Next(-1, 2) * 0.5;    
         }
     }
 }
