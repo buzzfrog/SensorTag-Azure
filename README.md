@@ -34,7 +34,7 @@ Personal emails like xyz@hotmail.com are not organizations accounts).
 
 ![Create new Event Hub](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/service-bus-create-event-hub-start.png)
 
-6\. Enter the following information.
+6\. Enter the following information and click on *Create a new Event Hub*.
 
 ![Create new Event Hub](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-create.png)
 
