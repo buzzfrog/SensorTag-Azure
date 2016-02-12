@@ -30,7 +30,7 @@ Personal emails like xyz@hotmail.com are not organizations accounts).
 
 4\. Click on the new Service Bus namespace.
 
-5\. Open the tab *EVENT HUBS* and *Create a New Event Hub* in your Service Bus namespace.
+5\. Open the tab *EVENT HUBS* and click on *Create a New Event Hub* in your Service Bus namespace.
 
 ![Create new Event Hub](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/service-bus-create-event-hub-start.png)
 
