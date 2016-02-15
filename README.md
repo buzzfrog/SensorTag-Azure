@@ -85,7 +85,7 @@ see any data in the dashboard.)
 
 ![Stream Analytics Input](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input.png)
 
-5\. Create a new input
+5\. Click on *Add an input*
 
 ![Stream Analytics Input Create 1](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-1.png)
 
@@ -95,14 +95,14 @@ see any data in the dashboard.)
 
 ![Stream Analytics Input Create 4](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-4.png)
 
-6\. Create a new output by going to the *OUTPUT* tab
+6\. Create a new output by going to the *OUTPUTS* tab
 
 #### VERY IMPORTANT INFORMATION ####
 You need to connect to PowerBI with an organization account, as I said above. You can't use a Microsoft Live account for this. So, if you
 logged in with a Micrsoft Live account you need to create an Azure Active Directory tenant and create one user in that tenant. Use
 that new user when you authorize the connection that we will do in the instructions below.
 
-7\. Create a new output
+7\. Click on *Add an output*
 
 ![Stream Analytics Output Create](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-1.png)
 
@@ -147,5 +147,11 @@ Remember to save your query.
 
 
 ### 5. Create a PowerBI report ###
+
+1\. Go to http://www.powerbi.com and login with the same account as you used to authenticate the connection to PowerBI when creating the
+output from the Stream Analytics job.
+
+![PowerBI Main Page](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-main.png)
+
 
 
