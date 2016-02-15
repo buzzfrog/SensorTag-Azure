@@ -43,12 +43,12 @@ Personal emails like xyz@hotmail.com are not organizations accounts).
 ![New Event Hub Ready](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-created.png)
 
 8\. Click on the tab *CONFIGURE* and enter the information shown in the screen below in the section *shared access policy*. Remember
-to also save it by clicking SAVE in teh bottom of the screen.
+to also save it by clicking SAVE in the bottom of the screen.
 
 ![New Shared Access Policy](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-shared-access-policy.png)
 
 When it is saved a new section will appear, *shared access key generator*. The *Policy Name* and the *Primary Key* will we
-use later in the application that sends the information to Azure. (This is the credentials to be able to send to this event hub.)
+use later in the application that sends the information to the EventHub.
 
 ![Shared Access Key Generator](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-shared-access-key-generator.png)
 
