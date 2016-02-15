@@ -163,7 +163,19 @@ output from the Stream Analytics job.
 
 ![PowerBI Dataset](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-dataset.png)
 
-5\. Click on the dataset *sensortag* to start creating a visualization. 
+5\. Click on the dataset *sensortag* to start creating a visualization.
+
+#### Create a simple line chart ####
+
+6\. Click on the line chart icon in the Visualizations pane.
+
+![PowerBI Create a Line Chart](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-dataset-open.png)
+
+7\. Drag *time* to the field *Axis* and *temperature* to the field *Values*
+
+![PowerBI Create a Line Chart](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-create-line-chart.png)
+
+ 
 
 
 
