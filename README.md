@@ -151,7 +151,22 @@ Remember to save your query.
 1\. Go to http://www.powerbi.com and login with the same account as you used to authenticate the connection to PowerBI when creating the
 output from the Stream Analytics job.
 
+2\. Click on the heading *Power BI* to open your workspace.
+
 ![PowerBI Main Page](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-main.png)
+
+3\. Click on the hamburger icon up in the left corner to expand the navigation pane.
+
+![PowerBI Workspace](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-open-ws.png)
+
+4\. If all previous steps has worked, you will now see that a new dataset called *sensortag* has appeared.
+
+![PowerBI Dataset](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-dataset.png)
+
+5\. Click on the dataset *sensortag* to start creating a visualization. 
+
+
+
 
 
 
